@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QuickBite - Order</title>
+        <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open Sans:400,600,700">
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/menu.css">
+    </head>
+
+    <body>  
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <img src="../icons/logo.png" alt="QuickBite Logo" class="logo">
+            <nav>
+                <a href="../html/home.html">Home</a>
+                <a href="#" class="active">Order</a>
+                <a href="../html/contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <!--Menu Section-->
+            <div class="menu-section">
+                <!--Navigation bar for categories-->
+                <div class="category">
+                    <button class="tab active" data-category="appetizer">Appetizer</button> 
+                    <button class="tab" data-category="mainCourse">Main Course</button> 
+                    <button class="tab" data-category="beverage">Beverage</button> 
+                    <button class="tab" data-category="dessert">Dessert</button> 
+                </div>
+                <!--Category title is displayed according to tab selected-->
+                <h1 id="category-title"></h1> 
+                <div id="card-container">
+                    <!--Cards are added dynamically-->
+                </div>
+            </div>
+
+            <!--Order Section-->
+            <div class="order-section">
+                <h2>- YOUR ORDER -</h2>
+                <div id="order-list">
+                    <!--Orders are added dynamically-->
+                </div>
+                <!--Button to clear order-->
+                <button id="clear-btn">
+                    <img src="../icons/trash-icon.png">
+                    Clear Order
+                </button>
+                <hr>
+                <!--Display totals-->
+                <div class="totals">
+                    <p>
+                        <span class="label">Subtotal</span>
+                        <span id="subtotal" class="price">RM 0.00</span>
+                    </p>
+                    <p>
+                        <span class="label">Service Tax (6%)</span>
+                        <span id="tax" class="price">RM 0.00</span>
+                    </p>
+                    <p>
+                        <span class="label"><strong>Total</strong></span>
+                        <span id="total" class="price"><strong>RM 0.00</strong></span>
+                    </p>
+                </div>
+                <br>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+
+         <!-- Footer -->
+        <div class="footer">
+            <div class="socials">
+                <a href="#"><img src="../icons/x_logo.png" alt="X (Twitter)"></a>
+                <a href="#"><img src="../icons/ig_logo.png" alt="Instagram"></a>
+                <a href="#"><img src="../icons/fb_logo.png" alt="Facebook"></a>
+            </div>
+            <p>support@quickbite.com.my | 0123456789 (10 a.m. - 6 p.m.)</p>
+        </div>
+
+        <script src="../script.js"></script>
+    </body>
+</html>

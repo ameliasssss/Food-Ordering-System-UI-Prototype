@@ -1,0 +1,33 @@
+.content {
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.content_message h1 {
+    font-size: 50px;
+    max-width: 600px;
+}
+
+.content_message p {
+    color: #6e3f2a;
+    font-size: 20px;
+    text-align: justify;
+    max-width: 600px;
+}
+
+.cta {
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.food_image img {
+    max-width: 500px;
+    border-radius: 50%;
+    margin-top: 30px;
+    align-items: center;
+}

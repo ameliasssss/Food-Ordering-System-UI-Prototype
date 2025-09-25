@@ -1,0 +1,266 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-section {
+    flex: 3; /* Menu section takes up more spaces */
+}
+
+/* Categories */
+.category {
+    background-color: #FFDB4E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+    width: 100%;              
+    height: auto;    
+    padding: 0; 
+
+    display: flex;    
+}
+
+.category button {
+    padding: 15px 20px;    
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #612A05;
+
+    border: none;
+    border-right: solid 1px #612A05;
+    background: #FFDB4E;
+    cursor: pointer;
+}
+
+.category button.active {
+    background: #612A05;
+    color: white;
+}
+
+.category button:last-child {
+    border-right: none;       /* Remove border on the last button */
+}
+
+.category button:hover {
+    background: #a54528;
+    color: white;
+}
+
+/* Menu */
+#category-title {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#card-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap; /* Multi-line */
+}
+
+.card {
+    width: 216px;
+    height: 100%;
+    padding: 10px;
+
+    text-align: center;
+    font-size: 15px;
+
+    background: white;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;  /* Image sized to fit the entire img section */
+}
+
+.card button {
+    background: #FFDB4E;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
+
+    width: 20px;             
+    height: 20px;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #612A05;
+}
+
+.card button:hover {
+    color: white;
+    background-color: #A54528;
+}
+
+.food-name {
+    font-weight: 700;
+}
+
+.food-desc {
+    font-style: italic;
+}
+
+/* Moving price to the left and the button to the right on the same row*/
+.price-btn {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: auto;
+}
+
+.food-price {
+    font-weight: 700;
+}
+
+/* Order Section */
+.order-section {
+    flex: 1;
+    margin-top: 0;
+    height: 100vh;
+    padding: 20px;
+    border: solid 1px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Order List */
+#order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.order-row {
+  display: grid;
+  /* Item name takes up wider fraction of space */
+  grid-template-columns: 2fr 1fr 1fr 0.5fr; 
+
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd; /* Separate each row */
+  color: #612A05;
+}
+
+.order-name {    
+    font-weight: 600;
+}
+
+.order-qty {
+    width: 25px;
+    height: 15px;
+    margin: 0 10px;
+    
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.order-price {
+    min-width: 80px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background: #FFDB4E;
+
+    width: 20px;             
+    height: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #612A05;
+}
+
+.delete-btn:hover {
+    color: white;
+    background-color: #A54528;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 30px auto;
+    background-color: #612A05;
+}
+
+/* Displaying Totals */
+.order-section .totals p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.order-section .totals .price {
+    margin-left: 20px;
+    margin-right: 0;
+    min-width: 80px;
+}
+
+#clear-btn {
+    display: flex;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    
+    background: #FF5A5A;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#clear-btn:hover {
+    background-color: red;
+}
+
+#checkout-btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    
+    background-color: #FFDB4E;
+    color: #612A05;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  0px 4px 4px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    color: white;
+    background-color: #A54528;
+}
