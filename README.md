@@ -1,2 +1,9 @@
-# Food-Ordering-System-UI-Prototype
-A UI prototype developed using HTML, CSS, and Javascript.
+# Food Ordering System UI Prototype
+This project is a Food Ordering System UI prototype developed as part of a Rapid Application Development (RAD) assignment. The system provides an intuitive interface for browsing food categories, adding items to an order, and dynamically calculating payment details. The prototype is built with HTML, CSS, and JavaScript and focuses on front-end design and interactive functionality.
+
+## Layouts
+- Home Page
+  
+- Order Page
+  
+- Contact Page
