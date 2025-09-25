@@ -12,5 +12,7 @@ This project is a Food Ordering System UI prototype developed as part of a Rapid
 
 ## Role and Contribution
 Natalie - Home Page
+<br>
 Kai Wen - Order Page
+<br>
 Li Shan - Contact Page
