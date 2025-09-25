@@ -6,5 +6,6 @@ This project is a Food Ordering System UI prototype developed as part of a Rapid
 
 
 ## Get Started
-Open html/home.html in your browser.
-Navigate to the Order page and interact with the system.
+1. Clone the repository.
+2. Open html/home.html in your browser.
+3. Navigate to the Order page and interact with the system.
